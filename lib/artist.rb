@@ -22,7 +22,7 @@ class Artist
   end
 
   def songs
-    Songs.all.find do |i|
+    songs.all.find do |i|
       i.artist == self
     end 
   end
