@@ -11,7 +11,9 @@ class Genre
   end
 
   def self.all
-    @@all
+    @@all.collect do |i|
+      i.artist 
+    end 
   end
 
   def save
