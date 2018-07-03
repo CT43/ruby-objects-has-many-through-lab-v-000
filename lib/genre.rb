@@ -10,9 +10,7 @@ class Genre
   end
 
   def self.all
-    @@all.collect do |i|
-      i.songs.artist
-    end
+  
   end
 
   def save
