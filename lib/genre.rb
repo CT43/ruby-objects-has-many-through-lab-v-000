@@ -1,6 +1,6 @@
 
 class Genre
-  attr_accessor :name
+  attr_accessor :name, :songs
 
   @@all = []
 
@@ -12,8 +12,8 @@ class Genre
 
   def self.all
     @@all.collect do |i|
-      i.artist
-    end 
+      i.songs.artist
+    end
   end
 
   def save
