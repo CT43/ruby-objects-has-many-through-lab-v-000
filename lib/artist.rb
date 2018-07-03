@@ -21,4 +21,10 @@ class Artist
     Song.new(name, self, genre)
   end
 
+  def songs
+    Songs.all.find do |i|
+      i.artist == self
+    end 
+  end
+
 end
