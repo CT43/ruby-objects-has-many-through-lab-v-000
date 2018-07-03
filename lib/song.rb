@@ -12,7 +12,9 @@ class Song
   end
 
   def self.all
-    @@all.artist
+    @@all.collect do |i| 
+      i.artist 
+    end 
   end
 
   def save
