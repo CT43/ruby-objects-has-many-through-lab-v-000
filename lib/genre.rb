@@ -12,7 +12,7 @@ class Genre
 
   def self.all
     @@all.collect do |i|
-      i.artist 
+      i.artist
     end 
   end
 
