@@ -6,6 +6,7 @@ class Artist
 
   def initialize(name)
     @name = name
+    @songs = []
     save
   end
 
@@ -18,7 +19,8 @@ class Artist
   end
 
   def new_song(name, genre)
-    Song.new(name, self, genre)
+    @songs << Song.new(name, self, genre)
+    
   end 
 
 end
