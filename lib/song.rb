@@ -12,8 +12,8 @@ class Song
   end
 
   def self.all
-    @@all.collect do |i| 
-      i.artist 
+    @@all.collect do |i|
+      i.artist
     end 
   end
 
